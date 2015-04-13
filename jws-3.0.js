@@ -403,7 +403,7 @@ KJUR.jws.JWS.sign = function(alg, sHeader, sPayload, key, pass) {
     var ns1 = KJUR.jws.JWS;
 
     if (! ns1.isSafeJSONString(sHeader))
-	throw "JWS Head is not safe JSON string: " + sHead;
+	throw "JWS Head is not safe JSON string: " + sHeader;
 
     var pHeader = ns1.readSafeJSONString(sHeader);
 
